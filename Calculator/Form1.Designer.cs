@@ -47,11 +47,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.currentoperation = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+           
             this.SuspendLayout();
             // 
-            // one
+            // on
             // 
             this.one.Location = new System.Drawing.Point(12, 215);
             this.one.Name = "one";
@@ -236,16 +236,7 @@
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.operator_click);
             // 
-            // currentoperation
-            // 
-            this.currentoperation.AutoSize = true;
-            this.currentoperation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentoperation.Location = new System.Drawing.Point(22, 46);
-            this.currentoperation.Name = "currentoperation";
-            this.currentoperation.Size = new System.Drawing.Size(158, 55);
-            this.currentoperation.TabIndex = 22;
-            this.currentoperation.Text = "label1";
-            // 
+         
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -255,13 +246,16 @@
             this.textBox1.TabIndex = 23;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // cuurentoperation
+            // 
+   
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(827, 783);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.currentoperation);
+     
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button2);
@@ -280,7 +274,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.one);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -311,8 +305,9 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Label currentoperation;
+   
         private System.Windows.Forms.TextBox textBox1;
+        
     }
 }
 

@@ -14,8 +14,8 @@ namespace Calculator
     {
         Double resultValue = 0;
         String operationPerformed = "";
-        bool isOperationPerformed = false;
-         String Clear = "0";
+         bool isOperationPerformed = false;
+         
 
         public Form1()
         {
@@ -33,18 +33,23 @@ namespace Calculator
         {
             if (textBox1.Text == "0" || (isOperationPerformed))
             {
-
+                textBox1.Text = "";
             }
             isOperationPerformed = false;
             Button button = (Button)sender;
-            textBox1.Text = textBox1.Text + button.Text;
+            if (button.Text == ".")
+            {
+                if (!textBox1.Text.Contains(">"))
+                    textBox1.Text = textBox1.Text + button.Text;
+            }
+            else
+                textBox1.Text = textBox1.Text + button.Text;
 
         }
       
         private void operator_click(object sender, EventArgs e)
         {
 
-            currentoperation.Text = resultValue + " " + operationPerformed;
             Button button = (Button)sender;
             operationPerformed = button.Text;
             resultValue = Double.Parse(textBox1.Text);
